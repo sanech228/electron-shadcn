@@ -18,10 +18,10 @@ function createWindow() {
             contextIsolation: true,
             nodeIntegration: true,
             nodeIntegrationInSubFrames: false,
-
             preload: preload,
         },
         titleBarStyle: "hidden",
+        // open the DevTools
     });
     registerListeners(mainWindow);
 
@@ -31,6 +31,8 @@ function createWindow() {
         mainWindow.loadFile(
             path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`)
         );
+
+        mainWindow.webContents.openDevTools();
     }
 }
 

@@ -12,7 +12,7 @@ export default function App() {
 
     useEffect(() => {
         syncThemeWithLocal();
-        updateAppLanguage(i18n);
+        updateAppLanguage(i18n); 
     }, []);
 
     return (
