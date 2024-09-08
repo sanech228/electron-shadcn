@@ -57,8 +57,8 @@ const config: ForgeConfig = {
           name: '@electron-forge/publisher-github',
           config: {
             repository: {
-              owner: 'me',
-              name: 'awesome-thing'
+              owner: 'sanech228',
+              name: 'electron-shadcn'
             },
             prerelease: true
           }
